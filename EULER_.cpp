@@ -24,12 +24,12 @@ vector<long long int> fact(int x){
 
     int main()
     {    int n;
-    cin>>n;
+        cin>>n;
         vector<int> num;
-        num=fact(n);
+         num=fact(n);
 
         for(int i=0;i<num.size();i++){
-            cout<num[i];
+            cout<<num[i];
         }
         return 0;
     }

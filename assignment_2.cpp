@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<math.h>
-#include<process.h>
 #define f(x) l*pow(x,3)+m*pow(x,2)+n*x+o
 float l,m,n,o;
 int main()

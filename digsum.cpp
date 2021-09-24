@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int digsum(long long int x){
@@ -10,11 +11,11 @@ int digsum(long long int x){
    }
    return num;
 }
-vector<int> dig( )
-
 
 int main(){
     long long int x;
+    vector<int> dig( );
+
     int dig_sum;
     cin>>x;
     cout<<digsum(x);
