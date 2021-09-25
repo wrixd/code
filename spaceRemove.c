@@ -23,6 +23,6 @@ int main()
         i++;
     }
     m[j] = '\0';
-    printf("\n\nThe string after removing all  spaces is: %s", m);
+    printf("\n\nThe string after removing all  spaces is: %s \n", m);
     return 0;
 }

@@ -23,24 +23,7 @@ int main(){
     for(auto i=0;i<v2.size();i++){
         ++m2[v2[i]];
     }
-   
-    cout<<"\nCommon elements are\t\n";
-    int i=0;
-    for( auto i1=m1.begin();i1!=m1.end();++i1){
-         int element1 =m2[i1->first];
-         int element2 =i1->second;
-         if((element1==element2)&&element2==1){
-             printf("%d",i1->first);
-         }
-         if(element1>0){
-             
-             
-             for(int i=0;i<abs(element1-element2);i++){
-                 printf("%d",i1->first);
-             }
-             cout<<"\t";
-         }
-    }
-    
+
     return 0;
-}
+
+}    
