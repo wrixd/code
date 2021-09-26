@@ -2,22 +2,21 @@
 using namespace std;
 
 
-int  modularExponentiation(int x,int n)
+int  modularExponentiation(int x,int n,int M)
 {
     if(n==0)
         return 1;
-    else if(n%2 == 0)        //n is even
-        return modularExponentiation((x*x),n/2);
-    else                             //n is odd
-        return (x*modularExponentiation((x*x),(n-1)/2));
+    else if(n%2 == 0)        
+        return modularExponentiation((x*x)%M,n/2,M);
+    else                             
+        return (x*modularExponentiation((x*x)%M,(n-1)/2,M))%M;
 
 }
 
 int main(){
 
-    int x=8,n=4;
-   int ans= modularExponentiation(x,n);
-   cout<<"Ans is "<<endl<<ans;
+    int a,b,c,m;
+    cin>>a>>b>>c>>m;
+    cout<<(modularExponentiation(a,b,3)/c)%m;
     return 0;
-
 }
